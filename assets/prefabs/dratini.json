@@ -1,0 +1,48 @@
+{
+  "personality_value": 1551,
+  "ot_id": 3317,
+  "nickname": "Snake",
+  "langage": "fr-FR",
+  "ot_name": "Spitfire",
+  "status_condition": null,
+  "level": 5,
+  "growth": {
+    "species": 147,
+    "item_held": null,
+    "experience": 0,
+    "pp_bonuses": 0,
+    "friendship": 255
+  },
+  "attack": {
+    "moves": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pp": [
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "iv": {
+    "hp": 27,
+    "attack": 29,
+    "defense": 18,
+    "speed": 30,
+    "special_attack": 26,
+    "special_defense": 24
+  },
+  "ev": {
+    "hp": 0,
+    "attack": 0,
+    "defense": 0,
+    "speed": 0,
+    "special_attack": 0,
+    "special_defense": 0
+  },
+  "met_location": 1,
+  "egg": false
+}
