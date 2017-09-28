@@ -5,8 +5,9 @@ class Pokemon extends Phaser.Sprite
         super(game, x, y, sprite_name);
         for (let keys in object)
             this[keys] = object[keys];
-        game.add.existing(this);
+        this.anchor.set(0.5, 0.5);
         this.level = 5;
+        this.game.add.existing(this);
     }
 
     damage(power, attack, defense)

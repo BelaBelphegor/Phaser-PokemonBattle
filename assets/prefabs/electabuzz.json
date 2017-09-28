@@ -1,7 +1,7 @@
 {
   "personality_value": 1551,
   "ot_id": 0,
-  "nickname": "Buzz",
+  "nickname": "Electabuzz",
   "langage": "fr-FR",
   "ot_name": null,
   "status_condition": null,
@@ -15,16 +15,16 @@
   },
   "attack": {
     "moves": [
+      84,
+      98,
       0,
-      1,
-      2,
-      3
+      0
     ],
     "pp": [
-      20,
-      20,
-      20,
-      20
+      30,
+      30,
+      0,
+      0
     ]
   },
   "iv": {
