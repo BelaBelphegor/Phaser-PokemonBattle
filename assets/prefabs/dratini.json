@@ -13,6 +13,7 @@
     "pp_bonuses": 0,
     "friendship": 255
   },
+  "current_hp": 0,
   "attack": {
     "moves": [
       35,
@@ -36,8 +37,8 @@
     "special_defense": 24
   },
   "ev": {
-    "hp": 0,
-    "attack": 0,
+    "hp": 2000,
+    "attack": 200,
     "defense": 0,
     "speed": 0,
     "special_attack": 0,

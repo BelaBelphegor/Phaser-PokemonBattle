@@ -1,0 +1,52 @@
+[
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "base_stats":
+    {
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "speed": 105,
+      "special_attack": 95,
+      "special_defense": 85
+    },
+    "type":[16, null],
+    "catch_rate": 45,
+    "base_exp_yeld": 156,
+    "effort_yeld": [1, 1],
+    "gender": 1,
+    "egg_cycle": 6425,
+    "base_friendship": 18,
+    "levelup_type": 5,
+    "egg-group": [4, 2],
+    "ability1": null,
+    "ability2": null,
+    "safari_zone_rate": 25
+  },
+  {
+    "id": 147,
+    "name": "Dratini",
+    "base_stats":
+    {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "speed": 50,
+      "special_attack": 50,
+      "special_defense": 50
+    },
+    "type": [16, null],
+    "catch_rate": 45,
+    "base_exp_yeld": 67,
+    "effort_yeld": [1, 1],
+    "gender": 1,
+    "egg_cycle": 10280,
+    "base_friendship": 18,
+    "levelup_type": 5,
+    "egg-group": [1, 1],
+    "ability1": null,
+    "ability2": null,
+    "safari_zone_rate": 25
+  }
+]

@@ -27,9 +27,19 @@ class BattleMenu {
         ];
 
         // Interface Pokemon
+        this.party_ui = [
+          {'hp_label': game.add.text(340, 190, "HP: " + game.party[0].current_hp + "/" + this.game.party[0].stats.hp, label_css) },
+          {'level_label': game.add.text(340, 175, "Level: " + game.party[0].level, label_css) },
+        ];
+        this.ennemy_ui = [
+          {'hp_label': game.add.text(10, 10, "HP: " + game.encounter.wild.current_hp + "/" + this.game.encounter.wild.stats.hp, label_css) },
+          {'level_label': game.add.text(10, 25, "Level: " + game.encounter.wild.level, label_css) },
+        ];
     }
 
-    goUp() {
+    // Need to rewrite this
+    goUp()
+    {
         for (let i = 0; i < this.label.length; i++) {
             if (this.current_menu_item == i) {
                 let next = ((i + 2) >= this.label.length) ? ((this.label.length - 1) % i) : i + 2;
@@ -43,7 +53,8 @@ class BattleMenu {
         }
     }
 
-    goDown() {
+    goDown()
+    {
         for (let i = 0; i < this.label.length; i++) {
             if (this.current_menu_item == i) {
                 let next = ((i - 1) <= 0) ? 0 : i - 1;
@@ -69,7 +80,7 @@ class BattleMenu {
     }
 
     validate() {
-        // Rewrite this crap too.   
+        // Rewrite this crap too.
         if (this.current_state == EBattleMenuState.SHOW_MENU) {
             switch (this.current_menu_item) {
                 case 0:
@@ -91,17 +102,9 @@ class BattleMenu {
                     this.showDialog("You fled the battle...");
                     break;
             }
-        }
-        else if (this.current_state == EBattleMenuState.SHOW_MOVES) {
-            // Move this logic on Battle.js
-            let move = this.game.database.moves.getMoveById(this.game.party[0].attack.moves[this.current_menu_item]);
-            this.showDialog(this.game.party[0].nickname + " use " +
-                move.name +
-                ' !');
-            this.game.party[0].damage(move.base_power,
-                this.game.party[0].iv.attack,
-                this.game.encounter.wild.iv.defense);
-        }
+          }
+          this.ennemy_ui[0].hp_label.setText("HP: " + game.encounter.wild.current_hp + "/" + this.game.encounter.wild.stats.hp);
+          this.party_ui[0].hp_label.setText("HP: " + game.party[0].current_hp + "/" + game.party[0].stats.hp);
     }
 
     showDialog(msg) {
